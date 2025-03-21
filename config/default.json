@@ -1,0 +1,64 @@
+{
+  "network": "sepolia",
+  "sepolia": {
+    "rpcUrl": "https://sepolia.infura.io/v3/YOUR_INFURA_KEY",
+    "contractAddress": "YOUR_CONTRACT_ADDRESS"
+  },
+  "arbitrage": {
+    "minProfitUsd": 50,
+    "maxPathLength": 4,
+    "scanInterval": 5000,
+    "slippageTolerance": 0.5
+  },
+  "gas": {
+    "maxGasPrice": 100,
+    "priorityFee": 2
+  },
+  "flashLoan": {
+    "preferredProvider": "aave"
+  },
+  "logging": {
+    "level": "info",
+    "consoleOutput": true,
+    "fileOutput": true
+  },
+  "telegram": {
+    "enabled": true,
+    "botToken": "8163799396:AAHH6cPRrkawBzApufT3LFaLtnH6Ey7duqQ",
+    "chatId": "5288441563",
+    "throttleTime": 60000
+  },
+  "monitoring": {
+    "heartbeatIntervalMinutes": 60,
+    "logLevel": "info"
+  },
+  "circuitBreakers": {
+    "enabled": true,
+    "maxConsecutiveFailures": 3,
+    "maxDailyLoss": "0.1",
+    "cooldownPeriodMinutes": 60,
+    "priceDeviationPercent": 5,
+    "liquidityThresholdPercent": 20
+  },
+  "validation": {
+    "liquidity": {
+      "minLiquidityUSD": 10000,
+      "maxSlippagePercent": 2.5,
+      "reservesCheckEnabled": true
+    },
+    "price": {
+      "maxDeviationPercent": 10,
+      "oracleComparisonEnabled": true,
+      "minSpreadPercent": 0.5,
+      "minProfitUsd": 10
+    },
+    "gas": {
+      "maxGasPrice": 100,
+      "priorityFee": 2
+    }
+  },
+  "testing": {
+    "enabled": false,
+    "maxTestAmountETH": "0.1"
+  }
+}

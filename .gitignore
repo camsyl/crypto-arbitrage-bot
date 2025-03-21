@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build files
+dist/
+build/
+*.tsbuildinfo
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+coverage/
+coverage.json
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Private keys and secrets
+secrets.json
+private-keys.json
+
+# ETH contract deployment extras
+deployments/

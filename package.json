@@ -1,0 +1,45 @@
+{
+  "name": "arbscanfl---claude3.7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "start-bot": "node bot-runner.js",
+    "start-bot-dev": "nodemon bot-runner.js",
+    "start-telegram-monitor": "node scripts/telegram-arbitrage-monitor.js",
+    "monitor-telegram": "node scripts/telegram-arbitrage-monitor.js",
+    "pm2-start": "pm2 start ecosystem.config.js",
+    "pm2-stop": "pm2 stop ecosystem.config.js",
+    "pm2-logs": "pm2 logs arbitrage-telegram-monitor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@flashbots/ethers-provider-bundle": "^1.0.0",
+    "axios": "^1.8.4",
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0",
+    "config": "^3.3.12",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.7.1",
+    "inquirer": "^12.5.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "ora": "^8.2.0",
+    "pm2": "^6.0.5",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@aave/protocol-v2": "^1.0.1",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@uniswap/v3-periphery": "^1.4.4",
+    "chai": "^5.2.0",
+    "hardhat": "^2.22.19",
+    "mocha": "^11.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
